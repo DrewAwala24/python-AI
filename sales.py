@@ -7,8 +7,11 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df)
+print(df.describe())#to show you details fo everything
 
-total = np.sum(df["Sales"])
+total = np.sum(df["Sales"])  
+#if you dont want to use df
+#np.sum(data["sales"])
 print("Total Sales:",total) 
 
 average = np.mean(df["Sales"])
